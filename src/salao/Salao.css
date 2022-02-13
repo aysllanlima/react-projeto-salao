@@ -331,14 +331,12 @@ footer {
 }
 
 .container-das-listas {
-    sbackground-color: #421828;
     width: 100%;
     display: flex;
     justify-content: space-evenly;   
 }
 
 .lista-do-footer {
-    sbackground-color: blue;
     list-style: none;
     font-family: 'Lato', sans-serif;
     color: white;
@@ -359,15 +357,18 @@ footer {
 }
 
 .redes-sociais {
-    sbackground-color: purple;
     list-style: none;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
+.redes-sociais-icone:hover {
+    color: rgb(235, 216, 113);
+    cursor: pointer;
+}
+
 .logomarca {
-    sbackground-color: rgb(209, 82, 82);
     padding: 40px 0 0 0;
     max-width: 150px;
 }
