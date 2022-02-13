@@ -49,6 +49,7 @@ function Salao() {
                 vermelha de paixão, se escreve o conto da criação.
                 Beleza de mulher é arte, é poesia, são todas as notas da mais bela melodia, 
                 são encantos de mistério e loucura onde se guarda a origem da vida. 
+                ola mundo!!
                 <br />
                 Nós da <strong>BELLA'S Hair Salon</strong> trabalhamos todos os dias, para que cada mulher se sinta ÚNICA.
                 </p>
