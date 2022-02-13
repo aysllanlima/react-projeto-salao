@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.5105392498796393) 80%);
+    /* background: rgb(248, 248, 248); */
+}
+
+/* HEADER */
+
+header {
+    background-color: black; /*#6e4d33----rgb(54, 10, 54)------#734527*/
+    height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-image {
+    width: 110%;
+}
+
+/* MENU BURGER */
+
+.burger-container {
+    height: 100%;
+    display: none;
+}
+
+#checkbox-menu {
+    position: absolute;
+    opacity: 0;
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span {
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-radius: 30px;
+    background: #d4ad8f;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+
+label span:nth-child(2) {
+    top: 8px;
+}
+
+label span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+.header-list {
+    list-style: none;  /*elimina as bolinhas da lista*/
+    display: flex;
+    gap: 45px;    /*gap = vão*/
+}
+
+.header-list > li {
+    font-size: 16px;
+    color: white;
+    padding-bottom: 12px;
+    margin: 0;
+    transition: 0.8s;
+    border-bottom: 6px solid transparent;
+}
+
+.header-list > li:hover {
+    cursor: pointer;
+    color: #f4eadb;
+    border-bottom: 1px solid #f4eadb;
+}
+
+/* BANNER IMAGE DA LOIRA */
+
+.banner-container {
+    display: flex;
+    background-color: #734527;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+/* FLOAT */
+
+.float-container {
+    width: 60%;
+    height: 600px;
+
+    position: absolute;
+    left: 22.5%;
+    top: 120%;
+    margin-left: -50px;
+}
+
+.float-content {
+    background: #fff;
+    height: 85%;
+    padding: 0 100px;
+    color: white;
+}
+
+.float-content > h1 {
+    padding: 34px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+}
+
+.float-content > p {
+    
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 35px; /* Altura da linha */
+    text-align: justify; /* Justifica o texto, não precisa de flex para funcionar */
+    color: black;
+}
+
+.float-pb-container {
+    background: green;
+    height: 15%;
+    display: flex;
+
+    box-shadow: 0 10px 50px 3px rgb(133, 133, 133);
+}
+
+.float-branca {
+    background: white;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.float-branca > p {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.float-branca > p:hover {
+    color: rgb(228, 177, 10);
+}
+
+.float-preta {
+    background: rgb(0, 0, 0);
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.float-logo-image {
+    max-width: 250px;
+}
+
+/* BLANK SPACE  (DIV VAZIA OCUPANDO ESPAÇO */
+
+.blank-space {
+    width: 100%;
+    height: 600px;
+}
+
+/* COMPANY (EMPRESAS) */
+
+.company-container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.company-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-title > h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+
+.company-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.company-logo-content {
+    max-width: 150px
+}
+
+.company-logo {
+    width: 100%
+}
+
+/* SECTION DOS CARDS */
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 150px auto;
+    padding: 20px 0;
+}
+
+.cards-content {
+    display: flex;
+}
+
+.card-text {
+    background: #fff;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;  /*Deixa o texto todo em MAIÚSCULO*/
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image-container {
+    width: 200px;
+    height: 200px;
+    
+    overflow: hidden;
+
+    transition: 0.5s
+}
+
+.card-image-container:hover img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-image-container img {
+    max-width: 100%;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: 0.8s;
+}
+
+.card-image-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.black-box {
+    background: black;
+    color: white;
+} 
+
+/* DIVISOR */
+
+.footer-horizontal-divisor {
+    background: black;
+    height: 1px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* VIDEO */
+
+.video-container {
+    display: flex;
+    width: 100%;
+    opacity: 0.7;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-das-listas {
+    sbackground-color: #421828;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+.lista-do-footer {
+    sbackground-color: blue;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+
+    display: flex;
+    flex-direction: column; /* Deixa o display flex em coluna */
+    align-items: center;
+    gap: 15px;
+}
+
+.lista-do-footer > li {
+    transition: 0.5s;
+}
+
+.lista-do-footer > li:hover {
+    color: rgb(235, 216, 113);
+    cursor: pointer;
+}
+
+.redes-sociais {
+    sbackground-color: purple;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logomarca {
+    sbackground-color: rgb(209, 82, 82);
+    padding: 40px 0 0 0;
+    max-width: 150px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.redes-sociais-container {
+    max-width: 40px;
+}
+
+.redes-sociais-icone {
+    font-size: 25px;
+    color: white;
+}
+
+/* FOOTER */
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .burger-container {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        margin: 0 auto;
+    }
+
+    nav {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 426px) {
+    .logo-image {
+        max-width: 150px;
+    }        
+}
