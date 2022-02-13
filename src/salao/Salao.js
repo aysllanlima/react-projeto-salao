@@ -97,7 +97,7 @@ function Salao() {
             <div className="cards-container">
                 <div className="cards-content">
                     <div className="card-text black-box">Cabelo</div>
-                    <div className="card-image-container"><img className="card-image" src="image/cabelo.png" alt="" /></div>
+                    <div className="card-image-container"><img className="card-image" src="image/cabelo.png" alt="Foto Cabelo" /></div>
                     <div className="card-text">Maquiagem</div>
                     <div className="card-image-container"><img className="card-image" src="image/maquiagem.png" alt="" /></div>
                     <div className="card-text black-box">Depilação</div>
